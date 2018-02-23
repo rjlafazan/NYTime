@@ -2,13 +2,92 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<title>Document</title>
+	<title>New York Time Search</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+
 </head>
 <body>
+<!-- //Header -->
+<div class="container">
+	<div class="row">
+		<div class="col-md-10">
+			<div class="jumbotron">
+    			<h1>New York Times Search</h1>
+			</div>		
+		</div>
+	</div>
+</div>
+
+<!-- //Main Body -->
+<div class="container">
+	<div class="row">
+		<div class="col-md-10">
+		<form>
+  <div class="form-group">
+    <label for="">Search Term:</label>
+    <input type="text" class="form-control" id="searchTerm" aria-describedby="" placeholder="">
+
+  </div>
+  <div class="form-group">
+   <label for="exampleFormControlSelect1">Number of Records to Receive:</label>
+   <select class="form-control" id="numberRecords">
+     <option>5</option>
+     <option>10</option>
+     <option>15</option>
+   </select>
+ </div>
+<div class="form-group">
+    <label for="">Start Year (Optional):</label>
+    <input type="text" class="form-control" id="startYear" placeholder="">
+  </div>
+
+<div class="form-group">
+    <label for="">End Year (Optional):</label>
+    <input type="text" class="form-control" id="endYear" placeholder="">
+  </div>
+
+ 
+  <button type="submit" class="btn btn-primary" id="searchButton">Search</button>
+  <button type="submit" class="btn btn-primary" id="clearButton">Clear Results</button>
+</form>		
+		</div>
+	</div>
+</div>
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-10" id="results">
+			<div class="card">
+  <div class="card-header">
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Top Articles</h5>
+    
+  </div>
+</div>
+		</div>
+	</div>
+</div>
 
 
 
-	<script type="text/javascript" src="assets/javascript/backend.js"></script>
+<!-- //This is where Articles go
+ -->
+
+ <div class="container">
+	<div class="row">
+		<div class="col-md-10" id="results">
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="assets/javascript/backend.js"></script>
+
+	
 </body>
 </html>
